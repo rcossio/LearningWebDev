@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improof | Prove yourself better </title>
+    <link rel="icon" type="image/x-icon" href="./img/logo_icon.png" >
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="main-header"> <!-- Header -->
+        <div class="main-header__container">
+            <img class="main-header__logo" src="./img/logo.png" alt="Logo de Improof">
+            <ul class="main-header__user-buttons" >   <!-- Botones de log in-->
+                <li class="main-header__user-buttons--login">
+                    <a href="./pages/login.html">Log In</a>    
+                </li>
+                <li class="main-header__user-buttons--signup">
+                    <a href="./pages/404.html">Sign Up</a>    
+                </li>
+            </ul>
+            <nav class="main-header__navigation-bar"> <!-- Barras de navegacion-->
+                <ul>
+                    <li class="main-header__navigation-tag main-header__navigation-tag--current-page">
+                        <a href="./index.html"> Home</a>
+                    </li>
+                    <li class="main-header__navigation-tag">
+                        <a href="./pages/browse.html"> Find a certification</a>
+                    </li>
+                    <li class="main-header__navigation-tag">
+                        <a href="./pages/evaluator.html"> Join as a teacher</a>
+                    </li>
+                    <li class="main-header__navigation-tag">
+                        <a href="./pages/about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="iconify main_header__nav-icon" data-icon="entypo:menu"></span>
+        </div>
+    </header>
+    <main class="website-body"> <!-- Main -->
+        <section class="main-banner"> <!-- Banner con boton de busqueda-->
+            <form action="" method="get" class="main-banner__search-form">
+                <input type="text" name="fname" placeholder="What are you good at?" class="main-banner__search-box"> 
+                <input type="submit" name="search_button" value="Search" class="main-banner__search-button">
+            </form>
+        </section>
+        <section class="striking-texts"> <!-- Validacion-->
+            <ul class="striking-texts__list">
+                <li class="striking-texts__list-item">+500 Certified Students</li>
+                <li class="striking-texts__list-item">+30 Teacher Partners</li>
+                <li class="striking-texts__list-item">+5 Universities Asociated</li>
+            </ul>
+        </section> 
+        <section> <!-- Carrusel de certificaciones-->
+            <h2 class="carrousel__title carrousel__title--left carrousel__title--saffron-color">
+                <p>Trending course certifications</p>
+            </h2>
+            <div class="carrousel__body carrousel__body--steal-color">
+                <article class="carrousel__card">
+                    <div class="carrousel__card-container carrousel__card-container--white-text ">
+                        <img src="./img/cert1.png" alt="Imagen de un pizarrón escrito con ecuaciones algebraicas" width="300" height="160">         
+                        <p>Linear Algebra - M203</p>
+                        <p>Engineering Maths Track</p>
+                    </div>
+                </article>
+                <article class="carrousel__card">
+                    <div class="carrousel__card-container carrousel__card-container--white-text ">
+                        <img src="./img/cert2.png" alt="Imagen de la anatomía de la parte superior de un cuerpo humano" width="300" height="160">
+                        <p>General Anatomy - A101</p>
+                        <p>Medical Basic Concepts</p>
+                    </div>
+                </article>
+                <article class="carrousel__card">
+                    <div class="carrousel__card-container carrousel__card-container--white-text ">
+                        <img src="./img/cert3.png" alt="Imagen de un ADN" width="300" height="160">
+                        <p>Molecular Cloning - C113</p>
+                        <p>Genetics Track</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section> <!-- Carrusel de carreras-->
+            <h2 class="carrousel__title carrousel__title--fire-color carrousel__title--right">
+                <p>Trending tracks</p>
+            </h2>
+            <div class="carrousel__body carrousel__body--lavender-color">
+                <article class="carrousel__card">
+                    <div class="carrousel__card-container">
+                        <img src="./img/engineering.png" alt="Imagen de un grupo de ingeniería trabajando" width="300" height="160">         
+                        <p>Engineering Maths Track</p>
+                    </div>
+                </article>
+                <article class="carrousel__card">
+                    <div class="carrousel__card-container">
+                        <img src="./img/biotech.png" alt="Imagen representativa de la manipulación del ADN mediante biotecnología" width="300" height="160">         
+                        <p>Biotechnology base contents</p>
+                    </div>
+                </article>
+                <article class="carrousel__card">
+                    <div class="carrousel__card-container">
+                        <img src="./img/medical.png" alt="Imagen de un grupo médico" width="300" height="160">
+                        <p>Medical Basic Concepts</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="noticias">
+            <div class="noticias__article noticias__article--vertical">
+                <h2>Noticias</h2>
+                <article class="noticias__article-item">
+                    <h3>Trabajos insólitos</h3>
+                    <p>Se certificó en oceanografía y ahora trabaja con pinguinos</p>
+                </article>
+                <article class="noticias__article-item">
+                    <h3>Mercado laboral</h3>
+                    <p>Se estiman una necesidad de 5000 ingenieros este año en Argentina</p>
+                </article>
+            </div>
+            <div class="noticias__article noticias__article--vertical">
+                <h2>Webinars</h2>
+                <article class="noticias__article-item">
+                    <h3>Cómo armar un perfil en LinkedIn - por Viviana García</h3>
+                    <p>Sábado 04/jun/2021. 11-12:30 hrs. Webinar gratuito. <a>Registrarse acá</a></p>
+                </article>
+                <article class="noticias__article-item">
+                    <h3>CoderHouse - Equilibrando trabajo estudio - por Esteban Kito</h3>
+                    <p>Lunes 06/jun/2021. 19-20 hrs. Webinar gratuito. <a>Registrarse acá</a></p>
+                </article>
+            </div>
+            <div class="noticias__article noticias__article--horizontal">
+                <h2>Misceláneos</h2>
+                <article class="noticias__article-item">
+                    <h3>Por qué la imaginación es limitada?</h3>
+                    <p>Un artículo de Juan Carlos Mendieta</p>
+                </article>
+                <article class="noticias__article-item">
+                    <h3>Por qué la imaginación es limitada?</h3>
+                    <p>Un artículo de Juan Carlos Mendieta</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">  <!-- Footer -->
+        <div class="main-footer__container">
+            <address class="main-footer__address">
+                <p>Calle Falsa 123</p>
+                <p>Springfield</p>
+                <p>CP321321</p>
+            </address>
+            <a href="./pages/contact.html" class="main-footer__contact">Contact us </a>
+            <img src="./img/logo_horizontal.png" alt="Improof" class="main-footer__logo">
+            <ul class="main-footer__icon-list">
+                <li>
+                    <img src="./img/icon_ig.png" alt="Instagram icon" class="main-footer__icon">
+                </li>
+                <li>
+                    <img src="./img/icon_fb.png" alt="Facebook icon" class="main-footer__icon">
+                </li>
+                <li>
+                    <img src="./img/icon_in.png" alt="Linkedin Icon" class="main-footer__icon">
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+</html>

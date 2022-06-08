@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improof | Contact Us </title>
+    <link rel="icon" href="../img/logo_icon.png" >
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header class="main-header"> <!-- Header -->
+        <div class="main-header__container">
+            <img class="main-header__logo" src="../img/logo.png" alt="Logo de Improof">
+            <ul class="main-header__user-buttons" >   <!-- Botones de log in-->
+                <li class="main-header__user-buttons--login">
+                    <a href="../pages/login.html">Log In</a>    
+                </li>
+                <li class="main-header__user-buttons--signup">
+                    <a href="../pages/404.html">Sign Up</a>    
+                </li>
+            </ul>
+            <nav class="main-header__navigation-bar"> <!-- Barras de navegacion-->
+                <ul>
+                    <li class="main-header__navigation-tag main-header__navigation-tag--current-page">
+                        <a href="../index.html"> Home</a>
+                    </li>
+                    <li class="main-header__navigation-tag">
+                        <a href="../pages/browse.html"> Find a certification</a>
+                    </li>
+                    <li class="main-header__navigation-tag">
+                        <a href="../pages/evaluator.html"> Join as a teacher</a>
+                    </li>
+                    <li class="main-header__navigation-tag">
+                        <a href="../pages/about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="iconify main_header__nav-icon" data-icon="entypo:menu"></span>
+        </div>
+    </header>
+    <main class="contained website-body">
+        <h1 class="main-title">Contact us</h1>
+        <section class="two-cols two-cols--top">
+            <div>
+                <h2 class="main-title">E-mail</h2>
+                <form action="" method="post" enctype="application/x-www-form-urlencoded" class="general-form contactus-form">
+                    <label for="name" class="general-form__label">Name:</label>
+                    <input type="text" name="name" class="general-form__box contactus-box--name"> 
+                    <br>
+                    <label for="email" class="general-form__label">e-mail:</label>
+                    <input type="email" name="email" placeholder="this_is_an@example.com" class="general-form__box contactus-box--email">
+                    <br>
+                    <label for="celular" class="general-form__label">Celular:</label>
+                    <input type="tel" name="celular" placeholder="+54 (11) 12345678" class="general-form__box contactus-box--mobile"> 
+                    <br>
+                    <label for="comments" class="general-form__label">Comentarios</label>
+                    <br>
+                    <textarea name="comments" class="general-form__textarea contactus-box--commentary"></textarea>
+                    <br>
+                    <input type="submit" name="send" value="Send Message" class="general-form__submit contactus-box--submit">
+                </form>
+            </div>
+            <div>
+                <h2 class="main-title">Dirección y teléfono</h2>
+                <p class="address-contactus">
+                    Teléfono: +54 11 4123-4123 <br>
+                    Dirección: Calle False 123 <br>
+                    Springfield <br>
+                    CP321321 <br>
+                </p>
+                <div class="iframe-container">
+                    <iframe class="iframe-container__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7761734111573!2d-58.39473260370481!3d-34.60982097608824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac2cd859503%3A0x75cdafaaef2b946!2sCongreso%20de%20la%20Naci%C3%B3n%20Argentina!5e0!3m2!1sen!2sar!4v1653506225957!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="whapp-link">                
+                <span class="iconify whapp-link__icon" data-icon="logos:whatsapp"></span>
+                <p class="whapp-link__message"> Hola! <br> Cómo podemos ayudarte? </p>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">  <!-- Footer -->
+        <div class="main-footer__container">
+            <address class="main-footer__address">
+                <p>Calle Falsa 123</p>
+                <p>Springfield</p>
+                <p>CP321321</p>
+            </address>
+            <a href="../pages/contact.html" class="main-footer__contact">Contact us </a>
+            <img src="../img/logo_horizontal.png" alt="Improof" class="main-footer__logo">
+            <ul class="main-footer__icon-list">
+                <li>
+                    <img src="../img/icon_ig.png" alt="Instagram icon" class="main-footer__icon">
+                </li>
+                <li>
+                    <img src="../img/icon_fb.png" alt="Facebook icon" class="main-footer__icon">
+                </li>
+                <li>
+                    <img src="../img/icon_in.png" alt="Linkedin Icon" class="main-footer__icon">
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+</html>

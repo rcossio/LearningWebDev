@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improof | About Us</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo_icon.png" >
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header class="main-header"> <!-- Header -->
+        <div class="main-header__container">
+            <img class="main-header__logo" src="../img/logo.png" alt="Logo de Improof">
+            <ul class="main-header__user-buttons" >   <!-- Botones de log in-->
+                <li class="main-header__user-buttons--login">
+                    <a href="../pages/login.html">Log In</a>    
+                </li>
+                <li class="main-header__user-buttons--signup">
+                    <a href="../pages/404.html">Sign Up</a>    
+                </li>
+            </ul>
+            <nav class="main-header__navigation-bar"> <!-- Barras de navegacion-->
+                <ul>
+                    <li class="main-header__navigation-tag main-header__navigation-tag--current-page">
+                        <a href="../index.html"> Home</a>
+                    </li>
+                    <li class="main-header__navigation-tag">
+                        <a href="../pages/browse.html"> Find a certification</a>
+                    </li>
+                    <li class="main-header__navigation-tag">
+                        <a href="../pages/evaluator.html"> Join as a teacher</a>
+                    </li>
+                    <li class="main-header__navigation-tag">
+                        <a href="../pages/about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="iconify main_header__nav-icon" data-icon="entypo:menu"></span>
+        </div>
+    </header>
+    <main class="contained website-body">
+        <h1 class="main-title">Log In?</h1>
+        <section class="login-sign">
+            <form action="" method="post" enctype="application/x-www-form-urlencoded" class="general-form">
+                <input type="text" name="username" placeholder="Username" class="login-sign__box"> 
+                <br>
+                <br>
+                <input type="password" name="passwd" placeholder="Password" class="login-sign__box">
+                <br>
+                <input type="submit" name="send" value="Log In" class="login-sign__submit">
+            </form>
+            <form action="" method="post">
+                <input type="submit" name="send" value="Log In with Google" class="login-sign__other-login-button">
+            </form>
+            <br>
+            <form action="" method="post">
+                <input type="submit" name="send" value="Log In with Facebook" class="login-sign__other-login-button">
+            </form>
+            <p class="login-sign__signup-message">Not a member? <a href="../pages/404.html">Sign Up</a></p>
+        </section>
+    </main>    
+    <footer class="main-footer">  <!-- Footer -->
+        <div class="main-footer__container">
+            <address class="main-footer__address">
+                <p>Calle Falsa 123</p>
+                <p>Springfield</p>
+                <p>CP321321</p>
+            </address>
+            <a href="../pages/contact.html" class="main-footer__contact">Contact us </a>
+            <img src="../img/logo_horizontal.png" alt="Improof" class="main-footer__logo">
+            <ul class="main-footer__icon-list">
+                <li>
+                    <img src="../img/icon_ig.png" alt="Instagram icon" class="main-footer__icon">
+                </li>
+                <li>
+                    <img src="../img/icon_fb.png" alt="Facebook icon" class="main-footer__icon">
+                </li>
+                <li>
+                    <img src="../img/icon_in.png" alt="Linkedin Icon" class="main-footer__icon">
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+</html>
