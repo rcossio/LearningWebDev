@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&display=swap');
 
 * {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -8,12 +8,12 @@
     padding: 0px;
     text-decoration: none;
     box-sizing: border-box;
-}
+} */
 
 
 /* Acá arranca el grupito del main-header*/
 /* Sólo utilizar para eso*/
-.main-header{ 
+/* .main-header{ 
     border-bottom: 4px solid #EE6352;
 }
 
@@ -198,11 +198,11 @@
         justify-self: end;
     }
 }
-
+ */
 
 
 /* Acá arranca el grupito del main-banner*/
-.main-banner{
+/* .main-banner{
     background-image: url("../img/banner.png");
     background-size: cover;
     width: 100%;
@@ -233,11 +233,11 @@
     background-color: #EE6352;
     border-radius: 7px;
     color: white;
-}
+} */
 
 /* Acá arranca el grupito de striking texts*/
 /* Pensado para aplicarse a section/div que contengan un >ul>li */
-.striking-texts {
+/* .striking-texts {
     padding: 1rem 0;
     width: fit-content;
     margin: 0 auto;  
@@ -273,10 +273,10 @@
         font-size:large;
     }
 }
-
+ */
 /* Acá arranca el grupito de carrusel*/
 /* Pensado para aplicarse a section/div que contengan un h2 y div>article>div>img+p */
-.carrousel__body{
+/* .carrousel__body{
     display: flex;
     flex-flow: row wrap;
     overflow: hidden;
@@ -358,10 +358,10 @@
         font-size: small;
     }
 }
-
+ */
 /* Acá arranca el grupito del main-footer*/
 /* Sólo utilizar para eso*/
-.main-footer{
+/* .main-footer{
     background-image: linear-gradient(to bottom, #777777,#444444);
     padding-bottom: 4rem;
 }
@@ -434,10 +434,10 @@
         text-align: center;
     }
 }
-
+ */
 /* Acá arranca el grupito del sign-w-button*/
 /* Pensado para un section/div/article con un titulo y un boton dentro*/
-.sign-w-button {
+/* .sign-w-button {
     display: block;
     width: 55%;
     margin: 0 auto;
@@ -507,11 +507,11 @@
         font-size: medium;
     }
 
-}
+} */
 
 /* Acá arranca el grupito del side-video*/
 /* Pensado para aplicarse en div/section/article con un iframe*/
-.iframe-container { 
+/* .iframe-container { 
     height: 100%;
 }
 
@@ -531,10 +531,10 @@
     .iframe-container__map {
         max-width: 80vw;
     }
-}
+} */
 
 /* Acá arranca el grupito del general-form*/
-.general-form{
+/* .general-form{
     background-color: #EEE5E9;
     width: fit-content;
     padding: 1rem;
@@ -568,10 +568,10 @@
     padding: 0.5rem;
     max-width: 100%;
     margin: 0 1rem;
-}
+} */
 
 /* Dentro del general form tenemos el contact form para teachers */
-.contact-form{
+/* .contact-form{
     grid-template-areas:    "name name-box"
                             "degree degree-box"
                             "date date-box"
@@ -639,9 +639,9 @@
         max-width: 24rem;
     }
 }
-
+ */
 /* Dentro del general form tenemos el contactus form  */
-.contactus-form{
+/* .contactus-form{
     grid-template-areas:    "name name-box"
                             "email email-box"
                             "mobile mobile-box"
@@ -696,9 +696,9 @@
         max-width: 90vw;
     }
 }
-
+ */
 /* Acá arranca el grupito del main-title */
-.main-title {
+/* .main-title {
     font-size: xx-large;
     font-weight: 600;
     padding: 1rem 0;
@@ -719,9 +719,9 @@
         font-size: medium;
     }
 }
-
+ */
 /* Acá arranca el grupito del whapp-link*/
-.whapp-link{
+/* .whapp-link{
     width: 50px;
     height: auto;
     position: fixed;
@@ -743,7 +743,6 @@
     display: none;
 }
 .whapp-link__icon:hover + .whapp-link__message { 
-    /* Defino al icono y al mensaje como hermanos, no lo tengo del todo claro */
     display: inline-block;
     padding: 10px;
     background-color: white;
@@ -754,10 +753,10 @@
     top: -100px;
     border-radius: 7px;
     z-index: 2;
-}
+} */
 
 /* Acá arranca el grupito del login-sign*/
-.login-sign{
+/* .login-sign{
     display: block;
     margin: 0 auto;
     width: fit-content;
@@ -802,9 +801,9 @@
 .login-sign__signup-message > a:hover{
     text-decoration: underline;
 }
-
+ */
 /* Acá arranca el grupito de noticias*/
-.noticias{
+/* .noticias{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(2);
@@ -928,11 +927,11 @@
         padding: 0 0 0.5rem 0;
     } 
 }
-
+ */
 /* Acá hay un grupito de clases aplicadas en distintos lugares*/
 
 /* two-cols: Pensado para aplicarse sobre un las divs(hijos) de una section de dos columnas*/
-.two-cols {
+/* .two-cols {
     display: flex;
     flex-flow: row wrap;
     flex-basis: 1fr 1fr;
@@ -943,20 +942,20 @@
 }
 .two-cols--top {
     vertical-align: top;
-}
+} */
 /* vertical-line: Pensado para aplicar en un div para simular una linea vertical en browse */
-.vertical-line {
+/* .vertical-line {
     border-left: 6px solid #161612;
     height: 5rem;
     margin-left: calc(50% - 3px);
-  }
+  } */
 
 /* extra-vspace: pensado para agregar espacio con un div, sin tener que modificar margenes de las section*/
-.extra-vspace{
+/* .extra-vspace{
     height: 3rem;
-}
+} */
 /* contained: Le agrega margenes a una seccion/tittle/texto, ya que el default margin es 0 */
-.contained{
+/* .contained{
     padding: 2rem;
 }
 
@@ -984,4 +983,4 @@
 
 .se_mueve_en_cuadrado {
     animation: mi_efecto 1s linear 0s infinite normal none;
-}
+} */
