@@ -625,6 +625,10 @@
     grid-area: submit;
 }
 
+.contact-box--submit:hover{
+    text-shadow: 0 0 1px white;
+}
+
 .contact-form > label, .contact-form > input, .contact-form > textarea, .contact-form > select{
     width: 15rem;
 }
