@@ -684,6 +684,10 @@
     grid-area: submit;
 }
 
+.contactus-box--submit:hover{
+    text-shadow: 0 0 1px white;
+}
+
 .contactus-form > label {
     width: 8rem;
 }
