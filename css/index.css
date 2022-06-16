@@ -1,14 +1,12 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&display=swap');
+/*  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&display=swap'); */
 
 * {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 0px; 
     margin: 0px;
-    color: #161612;
-    padding: 0px;
+        padding: 0px;
     text-decoration: none;
     box-sizing: border-box;
-} */
+}
 
 
 /* Acá arranca el grupito del main-header*/
