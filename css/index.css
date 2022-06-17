@@ -942,11 +942,11 @@
     vertical-align: top;
 } */
 /* vertical-line: Pensado para aplicar en un div para simular una linea vertical en browse */
-/* .vertical-line {
-    border-left: 6px solid #161612;
+.vertical-line {
+    border-left: 4px solid #161612;
     height: 5rem;
-    margin-left: calc(50% - 3px);
-  } */
+    margin-left: calc(50% - 2px);
+  }
 
 /* extra-vspace: pensado para agregar espacio con un div, sin tener que modificar margenes de las section*/
 /* .extra-vspace{
