@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="row container-lg mx-auto"> <!-- Header -->
-        <img class="col-6 col-sm-4 col-md-3 col-lg-2 align-self-center p-2" href="./index.html" src="./img/logo.png" alt="Logo de Improof">
+        <img class="col-6 col-sm-4 col-md-3 col-lg-2 align-self-center p-2" src="./img/logo.png" alt="Logo de Improof">
         <div class="col d-flex flex-column">
             <ul class="nav nav-pills d-flex justify-content-end p-2">
                 <li class="nav-item">
@@ -47,13 +47,13 @@
     </header>
     <div class="container-fluid border border-1 border-danger"></div>
     <main class="container-lg"> <!-- Main -->
-        <section class="bg-image" style="background-image: url('./img/banner.png'); background-position: 50% 0; height: 20rem; background-size: cover;"> <!-- Banner con boton de busqueda-->
+        <section class="bg-image main-banner"> 
             <form class="d-flex flex-column flex-sm-row justify-content-center pt-5">
                 <input type="text" name="fname" placeholder="What are you good at?" class="form-control mx-auto me-sm-0 my-1" style="max-width: 18rem;"> 
                 <button type="submit" class="btn btn-danger mx-auto ms-sm-2 my-1">Search</button>
             </form>
         </section>
-        <section class="my-4"> <!-- Validacion-->
+        <section class="my-4"> 
             <ul class="list-unstyled">
                 <li class="text-center fs-3">+500 Certified Students</li>
                 <li class="text-center fs-3">+30 Teacher Partners</li>
@@ -66,22 +66,22 @@
                     Trending course certifications
                 </h2>
             </div>
-            <div class="row justify-content-evenly mt-0 py-4 px-3 gy-3 bg-secondary" style="margin: 0;">
-                <article class="card py-3 mx-3" style="max-width: 20rem;">
+            <div class="row justify-content-evenly m-0 py-4 px-3 gy-3 bg-secondary">
+                <article class="card py-3 mx-3 carrousel-card">
                     <img src="./img/cert1.png" alt="Imagen de un pizarrón escrito con ecuaciones algebraicas">
                     <div class="card-body">
                       <h5 class="card-title">Linear Algebra - M203</h5>
                       <p class="card-text">Engineering Maths Track</p>
                     </div>
                 </article>
-                <article class="card py-3 mx-3" style="max-width: 20rem;">
+                <article class="card py-3 mx-3 carrousel-card">
                     <img src="./img/cert2.png" alt="Imagen de la anatomía de la parte superior de un cuerpo humano">
                     <div class="card-body">
                       <h5 class="card-title">General Anatomy - A101</h5>
                       <p class="card-text">Medical Basic Concepts</p>
                     </div>
                 </article>
-                <article class="card py-3 mx-3" style="max-width: 20rem;">
+                <article class="card py-3 mx-3 carrousel-card">
                     <img src="./img/cert3.png" alt="Imagen de un ADN">
                     <div class="card-body">
                       <h5 class="card-title">Molecular Cloning - C113</h5>
@@ -96,20 +96,20 @@
                     Trending tracks
                 </h2>
             </div>
-            <div class="row justify-content-evenly mt-0 py-4 px-3 gy-3 bg-light" style="margin: 0;">
-                <article class="card py-3 mx-3" style="max-width: 20rem;">
+            <div class="row justify-content-evenly m-0 py-4 px-3 gy-3 bg-light">
+                <article class="card py-3 mx-3 carrousel-card">
                     <img src="./img/engineering.png" alt="Imagen de un grupo de ingeniería trabajando">
                     <div class="card-body">
                       <h5 class="card-title">Engineering Maths Track</h5>
                     </div>
                 </article>
-                <article class="card py-3 mx-3" style="max-width: 20rem;">
+                <article class="card py-3 mx-3 carrousel-card">
                     <img src="./img/biotech.png" alt="Imagen de un grupo de ingeniería trabajando">
                     <div class="card-body">
                       <h5 class="card-title">Biotechnology base contents</h5>
                     </div>
                 </article>
-                <article class="card py-3 mx-3" style="max-width: 20rem;">
+                <article class="card py-3 mx-3 carrousel-card">
                     <img src="./img/medical.png" alt="Imagen de un grupo de ingeniería trabajando">
                     <div class="card-body">
                       <h5 class="card-title">Medical Basic Concepts</h5>
@@ -197,17 +197,17 @@
             </div>
             <div class="col">
                 <figure class="container-fluid d-flex justify-content-center justify-content-sm-end p-0">
-                    <img src="./img/logo_horizontal.png" alt="Improof" class="" style="height: 3rem; width: auto;">
+                    <img src="./img/logo_horizontal.png" alt="Improof" class="logo-footer">
                 </figure>
                 <ul class="d-flex justify-content-center justify-content-sm-end list-unstyled">
                     <li>
-                        <img src="./img/icon_ig.png" alt="Instagram icon" class="m-1" style="width: 2rem;">
+                        <img src="./img/icon_ig.png" alt="Instagram icon" class="m-1 social-media-icon">
                     </li>
                     <li>
-                        <img src="./img/icon_fb.png" alt="Facebook icon" class="m-1" style="width: 2rem;">
+                        <img src="./img/icon_fb.png" alt="Facebook icon" class="m-1 social-media-icon">
                     </li>
                     <li>
-                        <img src="./img/icon_in.png" alt="Linkedin Icon" class="m-1" style="width: 2rem;">
+                        <img src="./img/icon_in.png" alt="Linkedin Icon" class="m-1 social-media-icon">
                     </li>
                 </ul>
             </div>
