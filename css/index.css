@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-/* vertical-line: Pensado para aplicar en un div para simular una linea vertical en browse */
 .vertical-line {
     border-left: 4px solid #161612;
     height: 5rem;
@@ -26,7 +25,15 @@
 }
 
 .carrousel-card{
-    max-width: 20rem;
+    max-width: 18rem;
+    min-width: 14rem;
+    height: 18rem;
+}
+
+@media screen and (max-width:576px) {
+    .carrousel-card{
+        height: 18rem;
+    }
 }
 
 .logo-footer{
@@ -42,3 +49,44 @@
     max-width: 18rem;
 }
 
+.search-box-banner {
+    max-width: 16rem;
+}
+
+.form-control:focus {
+    border-color: rgba(220, 53, 69, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.nav-link {
+    font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+    .nav-link {
+        font-size: 1.2rem;
+    }   
+}
+
+.grow-card {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+.grow-card:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.no-shadow:focus {
+    box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.25);
+}
+
+.shadow-box:hover{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.bold-on-hover:hover {
+    font-weight: 600;
+}
