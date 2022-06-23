@@ -1,0 +1,79 @@
+/* IFRAME*/
+.iframe-container { 
+    height: 100%;
+
+    &__video {
+        aspect-ratio: 16/9;
+        width: 25rem;
+        max-width: 100%;
+    }
+    &__map {
+        max-width: 24rem;
+        height: 14rem;
+        margin: 1rem 0;
+
+        @media screen and (max-width:650px) {  
+            max-width: 80vw;
+        }
+    }
+}
+
+/* MAIN TITLE */
+.main-title {
+    font-size: xx-large;
+    font-weight: 600;
+    padding: 1rem 0;
+
+    @media screen and (max-width:900px) {  
+        font-size: x-large;
+    }
+    @media screen and (max-width:650px) {  
+        font-size: large;
+    }
+    @media screen and (max-width:365px) {  
+        font-size: medium;
+    }
+}
+
+/* Acá hay un grupito de clases aplicadas en distintos lugares*/
+/* two-cols: Pensado para aplicarse sobre un las divs(hijos) de una section de dos columnas*/
+.two-cols {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 1fr 1fr;
+    justify-content: center;
+    gap: 2rem;
+    align-content: center;
+    margin: 1rem 0;
+    &--top {
+        vertical-align: top;
+    }
+}
+
+/* vertical-line: Pensado para aplicar en un div para simular una linea vertical en browse */
+.vertical-line {
+    border-left: 6px solid $dark;
+    height: 5rem;
+    margin-left: calc(50% - 3px);
+  }
+
+/* extra-vspace: pensado para agregar espacio con un div, sin tener que modificar margenes de las section*/
+.extra-vspace{
+    height: 3rem;
+}
+/* contained: Le agrega margenes a una seccion/tittle/texto, ya que el default margin es 0 */
+.contained{
+    padding: 2rem;
+}
+
+.website-body{
+    max-width: 1500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.button:hover{
+    /* font-weight: 700; */
+    text-shadow: 0px 0px 1px white;
+}
+

@@ -1,0 +1,179 @@
+
+/* CONTACT FORM y CONTACT-US FORM no se pueden separar en views porque provienen de un mismo general form.
+Habría que refactorear para que sea más modular */
+
+/* GENERAL FORM*/
+.general-form{
+    background-color: $light;
+    width: fit-content;
+    padding: 1rem;
+    margin: 0 auto;
+
+    &__submit{
+        margin: 0 auto;
+        width: fit-content;
+        padding: 1rem;
+        border-radius: 7px;
+        background-color: $primary;
+        color: white;
+        font-weight: 600;
+    }
+
+    &__label{
+        margin: 0 1rem;
+        max-width: 100%;
+    }
+
+    &__box{
+        height: 2rem;
+        padding: 0.5rem;
+        max-width: 100%;
+        margin: 0 1rem;
+    }
+    
+    &__textarea{
+        height: 8rem;
+        padding: 0.5rem;
+        max-width: 100%;
+        margin: 0 1rem;
+    }
+}
+
+
+/* CONTACT FORM*/
+.contact-form{
+    grid-template-areas:    "name name-box"
+                            "degree degree-box"
+                            "date date-box"
+                            "institutions institutions-box"
+                            "doc doc-box"
+                            "color color-box"
+                            "submit submit";
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+    gap: 1rem;
+
+    @media screen and (max-width:650px) {  
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 100%;
+        max-width: 24rem;
+    }
+
+    label, input, textarea, select {
+        width: 15rem;    }
+
+    .general-form__label{
+        &:nth-of-type(1){
+            grid-area: name;
+        }
+        &:nth-of-type(2){
+            grid-area: degree;
+        }
+        &:nth-of-type(3){
+            grid-area: date;
+        }
+        &:nth-of-type(4){
+            grid-area: institutions;
+        }
+        &:nth-of-type(5){
+            grid-area: doc;
+        }
+        &:nth-of-type(6){
+            grid-area: color;
+        }
+    }
+}
+
+.contact-box{
+    &--name{
+        grid-area: name-box;
+    }
+    &--degree{
+        grid-area: degree-box;
+    }
+    &--date{
+        grid-area: date-box;
+    }
+    &--institutions{
+        grid-area: institutions-box;
+    }
+    &--doc{
+        grid-area: doc-box;
+    }
+    &--color{
+        grid-area: color-box;
+    }
+    &--submit{
+        grid-area: submit;
+        &:hover{
+            text-shadow: 0 0 1px white;
+        }
+    }
+
+}
+
+/* CONTACT US FORM*/
+.contactus-form{
+    grid-template-areas:    "name name-box"
+                            "email email-box"
+                            "mobile mobile-box"
+                            "commentary commentary-box"
+                            "submit submit";
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    gap: 1rem;
+
+    .general-form__label{
+        &:nth-of-type(1){
+            grid-area: name;
+        }
+        &:nth-of-type(2){
+            grid-area: email;
+        }
+        &:nth-of-type(3){
+            grid-area: mobile;
+        }
+        &:nth-of-type(4){
+            grid-area: commentary;
+        }
+    }
+    label {
+        width: 8rem;
+    }
+    input, textarea {
+        width: 15rem;
+        max-width: 70vw;
+    }
+
+    @media screen and (max-width:650px) {  
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: start;
+        max-width: 90vw;
+    }
+}
+
+.contactus-box{
+    &--name{
+        grid-area: name-box;
+    }
+    &--email{
+        grid-area: email-box;
+    }
+    &--mobile{
+        grid-area: mobile-box;
+    }
+    &--commentary{
+        grid-area: commentary-box;
+    }
+    &--submit{
+        grid-area: submit;
+        &:hover{
+            text-shadow: 0 0 1px white;
+        } 
+    }
+}

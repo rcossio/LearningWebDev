@@ -1,0 +1,62 @@
+/* SIGN-W-BUTTON*/
+.sign-w-button {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: $gray;
+
+    @media screen and (max-width:650px) {  
+        width: 80%;
+        text-align: center;
+    }
+    &--left {
+        margin: 0 auto 0 10%;
+
+        @media screen and (max-width:650px) {  
+            margin: 0 auto;
+        }
+    }
+    &--right {
+        margin: 0 10% 0 auto;
+
+        @media screen and (max-width:650px) {  
+            margin: 0 auto;
+        }
+    }
+    &__search-form{
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 1rem;
+        max-width: 100%;
+    }
+    &__search-box {
+        padding: 10px 20px ;
+        background-color: white;
+        max-width: 100%;
+    }
+    &__search-button {
+        padding: 10px 20px;
+        background-color: $primary;
+        border-radius: 7px;
+        color: white;
+        font-weight: 500;
+    }
+    &__text {
+        font-size: larger;
+        font-weight: 600;
+        margin: 0 0 1rem 0;
+        color: white;
+
+        @media screen and (max-width:470px) {  
+            font-size: large;
+        }
+        @media screen and (max-width:365px) {  
+            font-size: medium;
+        }
+    }
+}

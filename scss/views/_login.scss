@@ -1,0 +1,42 @@
+/* LOG IN SIGN*/
+.login-sign{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: $light;
+    padding-bottom: 3rem ;
+    &__box{
+        display: inline-block;
+        width: 14rem;
+        padding: 0.5rem;
+        margin: 0 auto;
+    }
+    &__submit{
+        display: block;
+        margin: 1rem auto 0rem auto;
+        width: fit-content;
+        padding: 1rem;
+        border-radius: 7px;
+        background-color: $primary;
+        color: white;
+        font-weight: 600;
+    }
+    &__other-login-button{
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+        background-color: $gray;
+        border-radius: 7px;
+        padding: 0.7rem 1.5rem;
+        color: white;
+    }
+    &__signup-message{
+        text-align: center;
+        a{
+            font-weight: 600;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

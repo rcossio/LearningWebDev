@@ -1,0 +1,72 @@
+/* CARROUSEL*/
+.carrousel{
+    &__body{
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+        justify-content: space-around;
+        padding: 1.5rem 2rem;
+        font-weight: 600;
+        &--steal-color{
+            background-color: $gray;
+        }
+        &--lavender-color{
+            background-color: $light;
+        }
+    }
+    
+    &__title{
+        width: fit-content;
+        margin-top: 2rem;
+        padding: 1rem;
+        @media screen and (max-width:650px) {  
+            font-size:large;
+        }
+        @media screen and (max-width:365px) {  
+            font-size: medium;
+        }
+        &--left{
+            margin-right: auto;
+            transform: skew(45deg) translateX(-40px) scale(1.25,1);
+            p {
+                transform: scale(0.8,1) translateX(40px) skew(-45deg) ;
+            }
+        } 
+        &--right{
+            margin-left: auto;
+            transform: skew(-45deg) translateX(40px) scale(1.6,1);
+            p {
+                transform: scale(0.625,1) translateX(-40px) skew(45deg) ;
+            }
+        }
+        &--saffron-color{
+            background-color: $secondary;
+        }
+        &--fire-color{
+            background-color: $primary;
+        }
+    }
+    &__card{
+        padding: 0.5rem;
+    }
+    
+    &__card-container {
+        margin: 0 auto;
+        width: fit-content;
+        p {
+            @media screen and (max-width:365px) {  
+                font-size: small;
+            }
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        &--white-text{
+            p {
+                color: white;
+                margin-top: 0.2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+/* MAIN-FOOTER */
+.main-footer{
+    background-image: linear-gradient(to bottom, $gray,$dark);
+    padding-bottom: 4rem;
+
+    &__container {
+        display: grid;
+        grid-template-areas:"a . l" 
+                            "a . l"
+                            "a . i"
+                            ". . ."
+                            "c . .";
+        grid-template-columns: auto 30px auto;
+        grid-template-rows: auto;
+        padding: 2rem 2rem 3rem 2rem;
+        max-width: 1900px;
+        margin: 0 auto;
+
+        @media screen and (max-width:470px) {  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 2rem 3rem 2rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    &__logo {
+        grid-area: l;
+        height: 3rem;
+        width: auto;
+        margin: 1rem 0;
+        justify-self: end
+    } 
+    &__address {
+        grid-area: a;
+        padding: 1rem 0;
+
+        p{
+            color: white;
+            font-style:normal;
+        }
+    }
+    &__contact {
+        grid-area: c;
+        padding: 1rem 0;
+        font-size: large;
+        font-weight: 600;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__icon-list {
+        grid-area: i;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        list-style-type: none;
+        width: fit-content;
+        justify-self: end;
+    }
+    &__icon {
+        width: 2rem;
+        margin: 0 0.5rem;
+    }
+}
