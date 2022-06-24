@@ -37,7 +37,7 @@
         padding: 1rem 0;
 
         p{
-            color: white;
+            color: $background;
             font-style:normal;
         }
     }
@@ -46,7 +46,7 @@
         padding: 1rem 0;
         font-size: large;
         font-weight: 600;
-        color: white;
+        color: $background;
 
         &:hover {
             text-decoration: underline;

@@ -43,12 +43,12 @@
         font-weight: 500;
         &:hover {
             text-decoration: underline;
-            text-decoration-color: white;
+            text-decoration-color: $background;
         }
     }
     &__user-buttons--login{
         a {
-            color: white;
+            color: $background;
         }  
     }
     &__user-buttons--signup{

@@ -1,7 +1,19 @@
-/* COLORS */
+/* THEME */
+$theme: 'light';
 
+/* COLORS */
 $primary: #EE6352;
 $secondary: #FA9F42;
 $dark: #161612;
 $gray: #5A7D7C;
 $light: #EEE5E9;
+$background: white;
+
+@if $theme == 'dark' {
+    $primary: #EE6352;
+    $secondary: #FA9F42;
+    $dark: #EEE5E9;
+    $gray: #5A7D7C;
+    $light: #161612;
+    $background: black;
+} 

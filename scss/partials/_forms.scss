@@ -2,6 +2,15 @@
 /* CONTACT FORM y CONTACT-US FORM no se pueden separar en views porque provienen de un mismo general form.
 Habría que refactorear para que sea más modular */
 
+$map-form: (
+    1:name,
+    2:degree,
+    3:date,
+    4:institutions,
+    5:doc,
+    6:color,
+);
+
 /* GENERAL FORM*/
 .general-form{
     background-color: $light;
@@ -15,7 +24,7 @@ Habría que refactorear para que sea más modular */
         padding: 1rem;
         border-radius: 7px;
         background-color: $primary;
-        color: white;
+        color: $background;
         font-weight: 600;
     }
 
@@ -66,23 +75,10 @@ Habría que refactorear para que sea más modular */
         width: 15rem;    }
 
     .general-form__label{
-        &:nth-of-type(1){
-            grid-area: name;
-        }
-        &:nth-of-type(2){
-            grid-area: degree;
-        }
-        &:nth-of-type(3){
-            grid-area: date;
-        }
-        &:nth-of-type(4){
-            grid-area: institutions;
-        }
-        &:nth-of-type(5){
-            grid-area: doc;
-        }
-        &:nth-of-type(6){
-            grid-area: color;
+        @each $key,$val in $map-form {
+            &:nth-of-type(#{$key}){
+                grid-area: #{$val};
+            }
         }
     }
 }
@@ -109,7 +105,7 @@ Habría que refactorear para que sea más modular */
     &--submit{
         grid-area: submit;
         &:hover{
-            text-shadow: 0 0 1px white;
+            text-shadow: 0 0 1px $background;
         }
     }
 
@@ -173,7 +169,7 @@ Habría que refactorear para que sea más modular */
     &--submit{
         grid-area: submit;
         &:hover{
-            text-shadow: 0 0 1px white;
+            text-shadow: 0 0 1px $background;
         } 
     }
 }

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&display=swap");
+/* THEME */
 /* COLORS */
 * {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -10,8 +11,11 @@
   text-decoration: none;
   box-sizing: border-box; }
 
+html {
+  background-color: white; }
+
 /* CARROUSEL*/
-.carrousel__body {
+.carrousel__body, .carrousel__body--steal-color, .carrousel__body--lavender-color {
   display: flex;
   flex-flow: row wrap;
   overflow: hidden;
@@ -23,15 +27,15 @@
   .carrousel__body--lavender-color {
     background-color: #EEE5E9; }
 
-.carrousel__title {
+.carrousel__title, .carrousel__title--left, .carrousel__title--right {
   width: fit-content;
   margin-top: 2rem;
   padding: 1rem; }
   @media screen and (max-width: 650px) {
-    .carrousel__title {
+    .carrousel__title, .carrousel__title--left, .carrousel__title--right {
       font-size: large; } }
   @media screen and (max-width: 365px) {
-    .carrousel__title {
+    .carrousel__title, .carrousel__title--left, .carrousel__title--right {
       font-size: medium; } }
   .carrousel__title--left {
     margin-right: auto;

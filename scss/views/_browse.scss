@@ -36,21 +36,21 @@
     }
     &__search-box {
         padding: 10px 20px ;
-        background-color: white;
+        background-color: $background;
         max-width: 100%;
     }
     &__search-button {
         padding: 10px 20px;
         background-color: $primary;
         border-radius: 7px;
-        color: white;
+        color: $background;
         font-weight: 500;
     }
     &__text {
         font-size: larger;
         font-weight: 600;
         margin: 0 0 1rem 0;
-        color: white;
+        color: $background;
 
         @media screen and (max-width:470px) {  
             font-size: large;

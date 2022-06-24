@@ -2,8 +2,12 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 0px; 
     margin: 0px;
-    color: #161612;
+    color: $dark;
     padding: 0px;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+html{
+    background-color: $background;
 }
