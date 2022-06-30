@@ -68,8 +68,7 @@
 
 .website-body{
     max-width: 1500px;
-    display: block;
-    margin: 0 auto;
+    @include block-centered (0,0,auto);
 }
 
 .button:hover{

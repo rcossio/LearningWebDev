@@ -260,11 +260,11 @@ Habría que refactorear para que sea más modular */
     margin: 0 auto; }
   .main-header__logo {
     display: block;
-    height: 9rem;
+    margin: 0 auto 0 auto;
     width: auto;
+    height: 9rem;
     justify-self: start;
-    grid-area: l;
-    margin: 0 auto; }
+    grid-area: l; }
   .main-header__user-buttons {
     display: flex;
     flex-flow: row wrap;
@@ -432,7 +432,8 @@ Habría que refactorear para que sea más modular */
 .website-body {
   max-width: 1500px;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto 0 auto;
+  width: auto; }
 
 .button:hover {
   /* font-weight: 700; */
@@ -676,7 +677,7 @@ Habría que refactorear para que sea más modular */
 /* LOG IN SIGN*/
 .login-sign {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   width: fit-content;
   background-color: #EEE5E9;
   padding-bottom: 3rem; }
@@ -687,7 +688,7 @@ Habría que refactorear para que sea más modular */
     margin: 0 auto; }
   .login-sign__submit {
     display: block;
-    margin: 1rem auto 0rem auto;
+    margin: 1rem auto 0 auto;
     width: fit-content;
     padding: 1rem;
     border-radius: 7px;
@@ -696,7 +697,7 @@ Habría que refactorear para que sea más modular */
     font-weight: 600; }
   .login-sign__other-login-button {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     width: fit-content;
     background-color: #5A7D7C;
     border-radius: 7px;

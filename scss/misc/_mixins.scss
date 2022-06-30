@@ -1,0 +1,5 @@
+@mixin block-centered ($top,$bottom,$width) {
+    display: block;
+    margin: $top auto $bottom auto;
+    width: $width;
+}

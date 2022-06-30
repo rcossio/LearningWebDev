@@ -1,8 +1,6 @@
 /* LOG IN SIGN*/
 .login-sign{
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
+    @include block-centered(0,0,fit-content);
     background-color: $light;
     padding-bottom: 3rem ;
     &__box{
@@ -12,9 +10,7 @@
         margin: 0 auto;
     }
     &__submit{
-        display: block;
-        margin: 1rem auto 0rem auto;
-        width: fit-content;
+        @include block-centered(1rem,0,fit-content);
         padding: 1rem;
         border-radius: 7px;
         background-color: $primary;
@@ -22,9 +18,7 @@
         font-weight: 600;
     }
     &__other-login-button{
-        display: block;
-        margin: 0 auto;
-        width: fit-content;
+        @include block-centered(0,0,fit-content);
         background-color: $gray;
         border-radius: 7px;
         padding: 0.7rem 1.5rem;

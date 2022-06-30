@@ -15,12 +15,10 @@
         margin: 0 auto;
     }
     &__logo{
-        display: block;
+        @include block-centered (0,0,auto);
         height: 9rem;
-        width: auto;
         justify-self: start;
         grid-area: l;
-        margin: 0 auto;
     }
     &__user-buttons{
         display: flex;
