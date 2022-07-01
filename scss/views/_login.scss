@@ -15,7 +15,7 @@
         border-radius: 7px;
         background-color: $primary;
         color: $background;
-        font-weight: 600;
+        font-weight: map-get($font-weight,bolder);
     }
     &__other-login-button{
         @include block-centered(0,0,fit-content);
@@ -27,7 +27,7 @@
     &__signup-message{
         text-align: center;
         a{
-            font-weight: 600;
+            font-weight: map-get($font-weight,bolder);
             &:hover{
                 text-decoration: underline;
             }

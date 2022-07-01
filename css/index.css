@@ -436,7 +436,6 @@ Habría que refactorear para que sea más modular */
   width: auto; }
 
 .button:hover {
-  /* font-weight: 700; */
   text-shadow: 0px 0px 1px white; }
 
 /* STRIKING TEXTS*/
@@ -566,7 +565,7 @@ Habría que refactorear para que sea más modular */
 
 /* MAIN BANNER*/
 .main-banner {
-  background-image: url("../img/banner.png");
+  background-image: url("../img/banner.webp");
   background-size: cover;
   width: 100%;
   padding-top: 3rem;

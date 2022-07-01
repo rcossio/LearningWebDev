@@ -6,7 +6,7 @@
         overflow: hidden;
         justify-content: space-around;
         padding: 1.5rem 2rem;
-        font-weight: 600;
+        font-weight: map-get($font-weight,bolder);
         &--steal-color{
             @extend .carrousel__body;
             background-color: $gray;

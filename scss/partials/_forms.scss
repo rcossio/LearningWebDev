@@ -25,7 +25,7 @@ $map-form: (
         border-radius: 7px;
         background-color: $primary;
         color: $background;
-        font-weight: 600;
+        font-weight: map-get($font-weight,bolder);
     }
 
     &__label{

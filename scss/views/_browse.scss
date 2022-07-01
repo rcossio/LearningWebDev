@@ -44,11 +44,11 @@
         background-color: $primary;
         border-radius: 7px;
         color: $background;
-        font-weight: 500;
+        font-weight: map-get($font-weight,bold);
     }
     &__text {
         font-size: larger;
-        font-weight: 600;
+        font-weight: map-get($font-weight,bolder);
         margin: 0 0 1rem 0;
         color: $background;
 
