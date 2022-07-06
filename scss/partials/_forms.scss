@@ -38,6 +38,7 @@ $map-form: (
         padding: 0.5rem;
         max-width: 100%;
         margin: 0 1rem;
+        @include outline-primary;
     }
     
     &__textarea{
@@ -45,6 +46,7 @@ $map-form: (
         padding: 0.5rem;
         max-width: 100%;
         margin: 0 1rem;
+        @include outline-primary;
     }
 }
 

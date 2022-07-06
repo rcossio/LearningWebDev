@@ -8,6 +8,7 @@
         width: 14rem;
         padding: 0.5rem;
         margin: 0 auto;
+        @include outline-primary;
     }
     &__submit{
         @include block-centered(1rem,0,fit-content);

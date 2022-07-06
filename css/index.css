@@ -53,7 +53,13 @@ html {
     background-color: #EE6352; }
 
 .carrousel__card {
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  border-radius: 5px; }
+  .carrousel__card:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    background-color: rgba(255, 255, 255, 0.25); }
 
 .carrousel__card-container {
   margin: 0 auto;
@@ -143,12 +149,22 @@ Habría que refactorear para que sea más modular */
     height: 2rem;
     padding: 0.5rem;
     max-width: 100%;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 4px; }
+    .general-form__box:focus {
+      border: 2px solid #EE6352; }
   .general-form__textarea {
     height: 8rem;
     padding: 0.5rem;
     max-width: 100%;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 4px; }
+    .general-form__textarea:focus {
+      border: 2px solid #EE6352; }
 
 /* CONTACT FORM*/
 .contact-form {
@@ -438,6 +454,11 @@ Habría que refactorear para que sea más modular */
 .button:hover {
   text-shadow: 0px 0px 1px white; }
 
+.shadow-box:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in; }
+
 /* STRIKING TEXTS*/
 .striking-texts {
   padding: 1rem 0;
@@ -463,7 +484,7 @@ Habría que refactorear para que sea más modular */
       text-align: right; }
 
 /* SIGN-W-BUTTON*/
-.sign-w-button {
+.sign-w-button, .sign-w-button--left, .sign-w-button--right {
   display: block;
   width: 55%;
   margin: 0 auto;
@@ -471,7 +492,7 @@ Habría que refactorear para que sea más modular */
   border-radius: 15px;
   background-color: #5A7D7C; }
   @media screen and (max-width: 650px) {
-    .sign-w-button {
+    .sign-w-button, .sign-w-button--left, .sign-w-button--right {
       width: 80%;
       text-align: center; } }
   .sign-w-button--left {
@@ -495,7 +516,12 @@ Habría que refactorear para que sea más modular */
   .sign-w-button__search-box {
     padding: 10px 20px;
     background-color: white;
-    max-width: 100%; }
+    max-width: 100%;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 4px; }
+    .sign-w-button__search-box:focus {
+      border: 2px solid #EE6352; }
   .sign-w-button__search-button {
     padding: 10px 20px;
     background-color: #EE6352;
@@ -583,7 +609,12 @@ Habría que refactorear para que sea más modular */
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: white; }
+    background-color: white;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 4px; }
+    .main-banner__search-box:focus {
+      border: 2px solid #EE6352; }
   .main-banner__search-button {
     padding: 10px 20px;
     background-color: #EE6352;
@@ -623,6 +654,10 @@ Habría que refactorear para que sea más modular */
   .noticias__article-item {
     padding: 0.5rem;
     background-color: #EEE5E9; }
+    .noticias__article-item:hover {
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+      transition-duration: 0.1s;
+      transition-timing-function: ease-in; }
     .noticias__article-item h3 {
       font-size: large; }
     .noticias__article-item p {
@@ -684,7 +719,12 @@ Habría que refactorear para que sea más modular */
     display: inline-block;
     width: 14rem;
     padding: 0.5rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 4px; }
+    .login-sign__box:focus {
+      border: 2px solid #EE6352; }
   .login-sign__submit {
     display: block;
     margin: 1rem auto 0 auto;

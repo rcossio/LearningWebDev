@@ -12,6 +12,7 @@
         text-align: center;
     }
     &--left {
+        @extend .sign-w-button;
         margin: 0 auto 0 10%;
 
         @media screen and (max-width:650px) {  
@@ -19,6 +20,7 @@
         }
     }
     &--right {
+        @extend .sign-w-button;
         margin: 0 10% 0 auto;
 
         @media screen and (max-width:650px) {  
@@ -38,6 +40,12 @@
         padding: 10px 20px ;
         background-color: $background;
         max-width: 100%;
+        outline: none;
+        border: 2px solid rgba(0,0,0,0);
+        border-radius: 4px;
+        &:focus {
+            border: 2px solid $primary;
+        }
     }
     &__search-button {
         padding: 10px 20px;
