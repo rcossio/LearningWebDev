@@ -1,7 +1,7 @@
 /* MAIN-FOOTER */
 .main-footer{
     background-image: linear-gradient(to bottom, $gray,$dark);
-    padding-bottom: 4rem;
+    
 
     &__container {
         display: grid;
@@ -9,7 +9,9 @@
                             "a . l"
                             "a . i"
                             ". . ."
-                            "c . .";
+                            "c . ."
+                            ". . ."
+                            "r r r";
         grid-template-columns: auto 30px auto;
         grid-template-rows: auto;
         padding: 2rem 2rem 3rem 2rem;
@@ -25,6 +27,13 @@
             text-align: center;
         }
     }
+    &__copyright {
+        grid-area: r;
+        font-size: 0.8rem;
+        color: $light;
+        justify-self: center;
+        padding-top: 4rem;
+    } 
     &__logo {
         grid-area: l;
         height: 3rem;

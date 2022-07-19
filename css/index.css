@@ -59,7 +59,8 @@ html {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
-    background-color: rgba(255, 255, 255, 0.25); }
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(1.03); }
 
 .carrousel__card-container {
   margin: 0 auto;
@@ -76,11 +77,10 @@ html {
 
 /* MAIN-FOOTER */
 .main-footer {
-  background-image: linear-gradient(to bottom, #5A7D7C, #161612);
-  padding-bottom: 4rem; }
+  background-image: linear-gradient(to bottom, #5A7D7C, #161612); }
   .main-footer__container {
     display: grid;
-    grid-template-areas: "a . l"  "a . l" "a . i" ". . ." "c . .";
+    grid-template-areas: "a . l"  "a . l" "a . i" ". . ." "c . ." ". . ." "r r r";
     grid-template-columns: auto 30px auto;
     grid-template-rows: auto;
     padding: 2rem 2rem 3rem 2rem;
@@ -94,6 +94,12 @@ html {
         padding: 2rem 2rem 3rem 2rem;
         margin: 0 auto;
         text-align: center; } }
+  .main-footer__copyright {
+    grid-area: r;
+    font-size: 0.8rem;
+    color: #EEE5E9;
+    justify-self: center;
+    padding-top: 4rem; }
   .main-footer__logo {
     grid-area: l;
     height: 3rem;
@@ -278,9 +284,11 @@ Habría que refactorear para que sea más modular */
     display: block;
     margin: 0 auto 0 auto;
     width: auto;
-    height: 9rem;
     justify-self: start;
-    grid-area: l; }
+    grid-area: l;
+    height: 9rem; }
+  .main-header__logo-img {
+    height: 100%; }
   .main-header__user-buttons {
     display: flex;
     flex-flow: row wrap;
@@ -454,11 +462,6 @@ Habría que refactorear para que sea más modular */
 .button:hover {
   text-shadow: 0px 0px 1px white; }
 
-.shadow-box:hover {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in; }
-
 /* STRIKING TEXTS*/
 .striking-texts {
   padding: 1rem 0;
@@ -491,6 +494,10 @@ Habría que refactorear para que sea más modular */
   padding: 30px;
   border-radius: 15px;
   background-color: #5A7D7C; }
+  .sign-w-button:hover, .sign-w-button--left:hover, .sign-w-button--right:hover {
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in; }
   @media screen and (max-width: 650px) {
     .sign-w-button, .sign-w-button--left, .sign-w-button--right {
       width: 80%;
@@ -570,24 +577,23 @@ Habría que refactorear para que sea más modular */
     top: -100px;
     border-radius: 7px;
     z-index: 2; }
+  .whapp-link__animated {
+    animation: mi_efecto 2s linear 2s 2 normal none; }
 
 .address-contactus {
   margin: 1rem 0; }
 
 @keyframes mi_efecto {
   0% {
-    transform: translate(0, 0); }
+    transform: scale(1); }
   25% {
-    transform: translate(0, 10px); }
+    transform: scale(1.2); }
   50% {
-    transform: translate(-10px, 10px); }
+    transform: scale(1); }
   75% {
-    transform: translate(-10px, 0); }
+    transform: scale(1.2); }
   100% {
-    transform: translate(0, 0); } }
-
-.se_mueve_en_cuadrado {
-  animation: mi_efecto 1s linear 0s infinite normal none; }
+    transform: scale(1); } }
 
 /* MAIN BANNER*/
 .main-banner {

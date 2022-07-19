@@ -16,9 +16,12 @@
     }
     &__logo{
         @include block-centered (0,0,auto);
-        height: 9rem;
         justify-self: start;
         grid-area: l;
+        height: 9rem;
+    }
+    &__logo-img{
+        height: 100%;
     }
     &__user-buttons{
         display: flex;
